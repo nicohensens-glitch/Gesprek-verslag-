@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gespreksverslag</title>
+</head>
+<body>
+<h1>Gespreksverslag leerling</h1>
+
+<label>Leerling:</label>
+<select id="studentSelect"></select>
+<input type="text" id="newStudent" placeholder="Nieuwe leerling">
+<button onclick="addStudent()">Toevoegen</button>
+<br><br>
+
+<textarea id="inputText" rows="6" cols="40" placeholder="Typ of spreek hier"></textarea>
+<br>
+<button id="startStopBtn" onclick="toggleRecording()">Inspreken</button>
+<button onclick="processText()">Verwerk verslag</button>
+<br><br>
+
+<h3>Resultaat:</h3>
+<pre id="resultText"></pre>
+<br>
+<button onclick="sendMail()">Mailen</button>
+
+<!-- JS bestand -->
+<script src="app.js"></
